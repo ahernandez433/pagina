@@ -1,0 +1,276 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #01969c;
+}
+
+a {
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+.jumbotron {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background-color: #01969c;
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.jumbotron > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.jumbotron > figure {
+  text-align: center;
+}
+
+.jumbotron > figure > img {
+max-width: 100%;
+width: 12rem;
+}
+
+.jumbotron > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.jumbotron > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+
+
+
+/* tarjeta styles */
+.tarjeta {
+  padding: 2rem;
+}
+
+.tarjeta > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.tarjeta > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+  list-style-type: none;
+  background-color: white;
+  padding: 1rem:
+}
+
+.tarjeta > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.tarjeta > ul > li > figure > img {
+  width: 100%;
+}
+
+.tarjeta > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: #white (0,0,0,.7);
+  width: 100%;
+}
+
+.tarjeta > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+
+.tarjeta > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+.tarjeta > ul > li > .textos > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+/* menu styles
+#menu {
+
+  list-style: none;
+  border: thin solid #00b4f7;
+  padding: 0;
+  background-color: #0082d6;
+  padding: 5px;
+}
+
+#menu > li {
+    border: thin solid #0090eb;
+    display: inline-grid;
+}
+
+#menu > li:first-child  {
+  background-color: #009df3;
+
+}
+
+#menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+#menu > li:hover {
+  background-color: #005891;
+}
+
+@media only screen and (max-width: 768px) {
+  #menu > li {
+      width: 100%;
+  }
+}
+*/
+nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+/*
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #01969c;
+}
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Arial', cursive;
+}
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Arial',cursive;
+    font-size: 16px;
+}
+
+span {
+    color: #2BD6B4;
+}
+*/
